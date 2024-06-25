@@ -10,24 +10,20 @@
 
 ## 참고 논문
 
-> **Custom Diffusion** [[repo]](https://github.com/CompVis/latent-diffusion)
+> **Custom Diffusion** [[repo]](https://github.com/adobe-research/custom-diffusion)
 >
-> _Proposed in [“High-Resolution Image Synthesis with Latent Diffusion Models”](https://arxiv.org/abs/2112.10752),
+> _Proposed in [“Multi-Concept Customization of Text-to-Image Diffusion”](https://arxiv.org/abs/2212.04488),
 > CVPR 2022
 
-> **RePaint** [[repo]](https://github.com/andreas128/RePaint)
+> **MasaCtrl** [[repo]](https://github.com/TencentARC/MasaCtrl)
 >
-> _Proposed in [“RePaint: Inpainting using Denoising Diffusion Probabilistic Models”](https://arxiv.org/abs/2201.09865),
+> _Proposed in [“MasaCtrl: Tuning-Free Mutual Self-Attention Control for Consistent Image Synthesis and Editing”](https://arxiv.org/abs/2304.08465),
 > CVPR 2022
 
-> **ControlNet** [[repo]](https://github.com/lllyasviel/ControlNet)
->
-> _Proposed in [“Adding Conditional Control to Text-to-Image Diffusion Models"](https://arxiv.org/abs/2302.05543),
-> CVPR 2023
 
 ## 방법론 1: Cross Attention Map 
 
-Stable Diffusion 모델을 활용하여 text condition을 주고, 1차적으로 잘린 이미지를 context에 맞게 생성합니다. 그러나 text prompt만으로는 Stable Diffusion이 복잡한 pose에 대한 semantic를 정확히 이해하기 어렵습니다. 이 문제를 해결하기 위해, Openpose를 사용하여 이미지에서 pose를 추출하고 이를 수정합니다. 이후, contextualize가 충분히 이루어지지 않은 부분에 대한 mask와 함께 ControlNet의 condition으로 제공하여 inpainting 작업을 수행합니다.
+
 
 ### MasaCtrl Architecture
 <p align="center">
@@ -74,7 +70,7 @@ Stable Diffusion 모델을 활용하여 text condition을 주고, 1차적으로 
 
 ## 팀원
 
-- [김민재](https://github.com/mingming2000): RePaint implementation (Stable Diffusion), Outpainting & ControlNet
-- [지동환](https://github.com/kmjnwn): RePaint implementation (Stable Diffusion, DDIM)
-- [김민영](https://github.com/kwjames98): Paper research, Demo
-- [황정현](): 
+- [김민영](https://github.com/EuroMinyoung186)
+- [지동환](https://github.com/zheedong)
+- [김민재](https://github.com/kwjames98)
+- [황정현]()
