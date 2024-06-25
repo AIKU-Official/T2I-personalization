@@ -16,7 +16,7 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
 | [김민재](https://github.com/kwjames98)*      | Inference, Code analysis(Textual Inversion),  Paper(Abstract, Introduction, Related Works, Preliminary, Method)  |
 | [김민영](https://github.com/EuroMinyoung186)     | Code analysis(Cross attention map), Inference, Evaluation(MasaCtrl), Distributive processing, Paper(Experiments, Conclusion) |
 | [지동환](https://github.com/zheedong)                          | Code analysis(Textual Inversion, Cross attention map), Inference, Paper(Reference) |
-| [황정현]()                           | Code analysis(Textual Inversion), Paper(Experiments, Conclusion), Inference |
+| [황정현](https://github.com/imjunghyunee)                           | Code analysis(Textual Inversion), Paper(Experiments, Conclusion), Inference |
 
 ## 참고 논문
 
@@ -102,4 +102,4 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
 - [김민영](https://github.com/EuroMinyoung186)
 - [지동환](https://github.com/zheedong)
 - [김민재](https://github.com/kwjames98)
-- [황정현]()
+- [황정현](https://github.com/imjunghyunee)
