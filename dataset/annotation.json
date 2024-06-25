@@ -1,0 +1,49 @@
+[
+    {
+        "name" : "flower_1",
+        "description" : "a photo of dried up flower",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/flower_1/0.jpg"
+        
+    },
+    {
+        "name" : "furniture_chair1",
+        "description" : "a photo of a pink chair",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/furniture_chair1/0.jpeg"
+        
+    },
+    {
+        "name" : "pet_cat1",
+        "description" : "a photo of a cat eating food from a bowl",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/pet_cat1/jeanie-de-klerk-av2WGfogjqg-unsplash.jpg"
+    },
+    {
+        "name" : "furniture_table1",
+        "description" : "a photo of table with a flower vase on the",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/furniture_table1/0.jpg"
+        
+    },
+    {
+        "name" : "plushie_penguin",
+        "description" : "A photo of a plushie penguin dressed as Santa Claus, with a red Santa hat, a white beard, and a red suit.",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/plushie_penguin/0.png"
+        
+    },
+    {
+        "name" : "toy_bear",
+        "description" : "a photo of a snow-covered patchwork bear",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/toy_bear/0.png"
+        
+    },
+    {
+        "name" : "jewelry_ring",
+        "description" : "a photo of a jewelry ring with diamond",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/dataset/benchmark_dataset/jewelry_ring/sabrianna-EOAaLXkPyGA-unsplash.jpg"
+        
+    },
+    {
+        "name" : "corgi",
+        "description" : "a photo of a running corgi",
+        "image_path" : "/home/aikusrv01/aiku/t2i_personalization/MasaCtrl/gradio_app/images/corgi.jpg"
+        
+    }    
+]
