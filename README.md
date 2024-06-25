@@ -66,7 +66,26 @@
 
 ## 예시 결과
 
+### final step별 image 차이
+<img src = "./images/corgi_final_step.png">
 
+#### Encoder와 Decoder별 image 차이
+<img src = "./images/corgi_layer_type.png">
+
+#### step 간격 별 image 차이
+<img src = "./images/corgi_skip_step_interval.png">
+
+#### start step별 image 차이
+<img src = "./images/corgi_start_step.png">
+
+#### final_step별 text-alignment와 image-alignment 사이의 관계
+<img src = "./images/final_step_plot.png">
+
+#### skip_step별 text-alignment와 image-alignment 사이의 관계 
+<img src = "./images/skip_step_interval_plot.png">
+
+#### start_step별 text-alignment와 image-alignment 사이의 관계 
+<img src = "./images/start_step_plot.png">
 
 ## 팀원
 
