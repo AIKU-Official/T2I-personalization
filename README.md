@@ -32,7 +32,7 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
 
 ### MasaCtrl Architecture
 <p align="center">
-    <img src = "./image/architecture.png"
+    <img src = "./image/MasaCtrl architecture.PNG"
         style = "width: 70%">
 </p>
 
@@ -41,7 +41,7 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
 
 
 <p align="center">
-    <img src = "./image/cross_attention_map.png"
+    <img src = "./image/cross attention map.PNG"
         style = "width: 50%">
 </p>
 
