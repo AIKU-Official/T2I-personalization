@@ -9,6 +9,7 @@
 본 프로젝트는 
 T2I personalization task는 사용자 제공 reference image를 기반으로 T2I diffusion 모델을 사용자 맞춤화하는 것입니다. 몇 장의 reference image와 text prompt를 제공하면 다양한 pose, view, background에서 대상의 새로운 렌더링을 생성할 수 있습니다. 기존 접근 방식은 고유한 텍스트 임베딩을 사용하여 대상을 나타내며, 텍스트 임베딩 자체나 확산 모델의 매개변수를 최적화하여 대상을 표현합니다. 그러나 이러한 방법들은 종종 색상, 텍스처 및 모양과 같은 대상의 외관을 정확하게 모방하는 데 실패합니다. 이는 텍스트 임베딩이 대상의 시각적 외관을 표현하는 데 충분한 spatial representation을 가지지 못하기 때문입니다.
 
+
 ## 팀원
 
 | 팀원                            | 역할                                       |
@@ -37,7 +38,7 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
 </p>
 
 
-## 방법론 1: Cross Attention Map 
+## 방법론 1: Cross Attention Map Control
 
 
 <p align="center">
@@ -45,7 +46,7 @@ T2I personalization task는 사용자 제공 reference image를 기반으로 T2I
         style = "width: 50%">
 </p>
 
-MasaCtrl은 layout 형성을 위해 S step 이후 denoising U-Net decoder 의 L layer의 cross attention map 을 average 한 16x16xN textual token correlated attention map을 얻은 후, N에 대해서 average 를 통해 16x16 attention map을 얻습니다. 그 후 pixel 별로 thresholding 해서 masked-guided mutual self attention을 위한 foreground/background binary mask를 생성합니다. 저희는 Encoder부분에서 또는 Decoder부분에서, 그리고 Encoder나 Decoder의 일부 cross attention map을 추출하는 방법을 통해 cross attention map이 이미지 생성에 끼치는 영향 비교했습니다. 
+MasaCtrl은 layout 형성을 위해 S step 이후 denoising U-Net decoder 의 L layer의 cross attention map 을 average 한 16x16xN textual token correlated attention map을 얻은 후, N에 대해서 average 를 통해 16x16 attention map을 얻습니다. 그 후 pixel 별로 thresholding 해서 masked-guided mutual self attention을 위한 foreground/background binary mask를 생성합니다. 저희는 Encoder부분에서 또는 Decoder부분에서, 그리고 Encoder나 Decoder의 일부 cross attention map을 추출하는 방법을 통해 cross attention map이 이미지 생성에 끼치는 영향을 비교했습니다. 
 
 ## 방법론 2: Denoising Step and layer
 
