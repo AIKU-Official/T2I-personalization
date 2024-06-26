@@ -56,6 +56,19 @@ MasaCtrl은 layout 형성을 위해 S step 이후 denoising U-Net decoder 의 L 
 
 그에 대한 해결책으로 Step을 4부터 50이 아니라 4부터 20 / 4부터 25 등 최종 step을 줄여주었습니다. Encoder를 활용하면 잘리는 부분이 없겠지만, Consistency가 유지되지 못하기 때문에 사용하기 힘들어 보였고, Decoder를 사용하면서 최대한 잘리는 부분이 없게 만들려면 계속해서 mutual self attention을 할 게 아니라 어느 정도까지는 mutual self attention을 주고, 그 이후로는 Text conditional만 영향을 주게하면, 초기에 source와 같은 형태로 세팅을 해주어 text에 의존하여 만들 수 있게 되지 않을까란 생각에서 착안했습니다.
 
+## 실행 방법
+
+Conda 가상환경을 사용하여, 다음 코드를 실행하는 것을 추천합니다.
+
+```
+pip install -r requirements.txt
+```
+
+실행 방법은 다음과 같습니다. playground_debug.py 파일의 IMAGE_PATH의 target prompt와 Image Path 정보를 가지는 json 파일을 넣어주시면 됩니다. json 파일 형식은 dataset/annotation.json 파일에서 확인하실 수 있습니다.
+
+```
+python playground_debug.py
+```
 
 ## 예시 결과
 
